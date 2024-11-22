@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ap2" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#003DA5</item> <!-- Azul Cruzeiro -->
+        <item name="colorPrimaryVariant">#001F54</item> <!-- Azul mais escuro -->
+        <item name="colorOnPrimary">#FFFFFF</item> <!-- Texto em branco -->
+
+        <!-- Cores de botões -->
+        <item name="colorSecondary">#FFD700</item> <!-- Amarelo dourado -->
+        <item name="colorOnSecondary">#FFFFFF</item> <!-- Texto em branco -->
+
+        <!-- Cor de fundo para atividades -->
+        <item name="android:windowBackground">#003DA5</item> <!-- Azul Cruzeiro -->
+    </style>
+
+    <style name="Theme.Ap2" parent="Base.Theme.Ap2" />
+</resources>

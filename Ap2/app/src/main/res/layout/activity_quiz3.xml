@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_cruzeiro"
+    tools:context=".QuizActivity3">
+
+    <!-- Pergunta -->
+    <TextView
+        android:id="@+id/pergunta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Como você se definiria?"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/radioGroupPergunta3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Opções de resposta -->
+    <RadioGroup
+        android:id="@+id/radioGroupPergunta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btnFinalizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pergunta3"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonDeterminado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Determinado"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCriativo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Criativo"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCalmo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calmo"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFocado"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:text="Focado"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <!-- Botão de finalização -->
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/golden_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="32dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

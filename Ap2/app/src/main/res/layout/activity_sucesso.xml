@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_cruzeiro"
+    tools:context=".SucessoActivity">
+
+    <!-- Imagem do time -->
+    <ImageView
+        android:id="@+id/imageViewTime"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="Imagem do time do Cruzeiro"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cruzeiro_team"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Descrição -->
+    <TextView
+        android:id="@+id/descricaoQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Descubra qual jogador do Cruzeiro você seria!"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageViewTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão para iniciar o quiz -->
+
+    <!-- Botão para abrir o site oficial do Cruzeiro -->
+
+    <Button
+        android:id="@+id/btnIniciarQuiz"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/golden_yellow"
+        android:text="Iniciar Quiz"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698" />
+
+    <Button
+        android:id="@+id/btnAbrirSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/golden_yellow"
+        android:text="Site do Cruzeiro"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+</androidx.constraintlayout.widget.ConstraintLayout>

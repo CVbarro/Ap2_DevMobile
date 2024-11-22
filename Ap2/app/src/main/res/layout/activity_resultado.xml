@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultadoActivity">
+
+    <!-- Caixa branca com texto do resultado -->
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rounded_white_box"
+        android:padding="16dp"
+        android:text="Resultado"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Imagem do jogador -->
+
+    <!-- Estrelinhas ao redor da imagem -->
+
+    <ImageView
+        android:id="@+id/imageViewJogador"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="120dp"
+        android:contentDescription="Imagem do Jogador"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewResultado" />
+
+    <ImageView
+        android:id="@+id/starTop"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/star"
+        app:layout_constraintBottom_toTopOf="@id/imageViewJogador"
+        app:layout_constraintEnd_toEndOf="@id/imageViewJogador"
+        app:layout_constraintStart_toStartOf="@id/imageViewJogador" />
+
+    <ImageView
+        android:id="@+id/starBottom"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/star"
+        app:layout_constraintTop_toBottomOf="@id/imageViewJogador"
+        app:layout_constraintEnd_toEndOf="@id/imageViewJogador"
+        app:layout_constraintStart_toStartOf="@id/imageViewJogador" />
+
+    <ImageView
+        android:id="@+id/starLeft"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/star"
+        app:layout_constraintEnd_toStartOf="@id/imageViewJogador"
+        app:layout_constraintTop_toTopOf="@id/imageViewJogador"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewJogador" />
+
+    <ImageView
+        android:id="@+id/starRight"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/star"
+        app:layout_constraintStart_toEndOf="@id/imageViewJogador"
+        app:layout_constraintTop_toTopOf="@id/imageViewJogador"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewJogador" />
+
+    <!-- Botão para voltar ao início -->
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="@color/golden_yellow"
+        android:padding="12dp"
+        android:text="Voltar ao Início"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewJogador" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_cruzeiro"
+    tools:context=".QuizActivity1">
+
+    <!-- Pergunta -->
+    <TextView
+        android:id="@+id/pergunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual posição você joga?"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/radioGroupPergunta1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Opções de resposta -->
+    <RadioGroup
+        android:id="@+id/radioGroupPergunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/btnProxima"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pergunta1"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonAtacante"
+            android:text="Atacante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMeioCampo"
+            android:text="Meio-campo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonZagueiro"
+            android:text="Zagueiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGoleiro"
+            android:text="Goleiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <!-- Botão para avançar -->
+    <Button
+        android:id="@+id/btnProxima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próxima"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/golden_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="32dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
