@@ -9,41 +9,13 @@
 
     <!-- Imagem na tela principal -->
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/cruzeiro"
-        app:layout_constraintBottom_toTopOf="@id/btnIniciarCadastro"
+        android:id="@+id/imageView2"
+        android:layout_width="364dp"
+        android:layout_height="466dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp" />
-
-    <!-- Botão para iniciar cadastro -->
-    <Button
-        android:id="@+id/btnIniciarCadastro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Iniciar Cadastro"
-        android:backgroundTint="@color/golden_yellow"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/btnLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
-        android:layout_marginTop="50dp" />
-
-    <!-- Botão de Login -->
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="146dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="28dp"
-        android:backgroundTint="@color/golden_yellow"
-        android:text="Login"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnIniciarCadastro" />
+        app:srcCompat="@drawable/cruzeiro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
